@@ -36,8 +36,8 @@ def names5():
     wordsize = maxLength(nameList) 
     for i in range(wordsize): # Names
         for letter in nameList[i]: # Letters
-            print(letter, end='')
+            print(letter)
+            print(' ', end='')
             for a in range(nameList[i].index(letter)):
                 print(' ', end='')
-        print('')
 names5()           
