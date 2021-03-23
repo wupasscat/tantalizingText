@@ -10,15 +10,15 @@ def maxLength(givenList):
 def names1():
     for item in nameList:
         print(item)
-#names1()
+names1()
 def names2():
     for item in nameList:
         print(item[0])
-#names2()
+names2()
 def names3():
     for i in nameList[0]:
         print(i)
-#names3()
+names3()
 def names4():
     wordsize = maxLength(nameList)
     print("List Length: ", len(nameList))
@@ -30,14 +30,14 @@ def names4():
             else:
                 print(name[i], end='')
         print('')           
-#names4()
+names4()
 def names5():
-    space = ' '
     wordsize = maxLength(nameList) 
     for i in range(wordsize): # Names
+        spaceIndex = 0
         for letter in nameList[i]: # Letters
+            for a in range(spaceIndex):
+              print(' ', end='')
             print(letter)
-            print(' ', end='')
-            for a in range(nameList[i].index(letter)):
-                print(' ', end='')
-names5()           
+            spaceIndex += 1
+names5()                    
